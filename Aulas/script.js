@@ -10,6 +10,8 @@
    do código.
   */
 
+
+
    //VARIÁVEIS
    var x = 10
    //Boas práticas 
@@ -27,9 +29,10 @@
    y = 25
     console.log(y)
 
+
+
    //TIPOS DE DADOS
    //string,number, booleano and object
-
 
    //TIPO STRING ou TEXTO
     const name = "Gabriel"
@@ -86,4 +89,47 @@
   console.log(typeof user)
 
 
+
   //MÉTODOS DE STRING
+   const fullName = "Gabriel Miquelin"
+   console.log(fullName)
+   console.log(fullName.length) //Mostra quantos caracteres tem essa string
+
+  //separando a string em list ou seja array
+   const stringToArray = fullName.split('')
+   console.log(stringToArray)
+
+   console.log(fullName.toLocaleLowerCase())//deixa tudo em letra minuscolo
+   console.log(fullName.toUpperCase())//dexa tudo em letra MAIUSCULA
+
+   //encontrando uma palavra em uma string
+   console.log(fullName.indexOf('Miquelin'))
+
+   //resgatar ou extrair uma parte de uma string 
+    console.log(fullName.slice(0,5))
+
+
+  //MÉTODOS DE ARRAY
+    const list = ['a','b','c','d','e']
+    console.log(list.length)
+    console.log(list[2])
+
+    list[5] = 'f'//criei um novo indice e atribui que indice 5 é igual a 'f'
+    console.log(list)
+
+    console.log(list[list.length - 1]) //como pegar o ultimo elemento de
+                                        //uma lista (sempre subtrair por 1)
+
+   //adcionando um elemento a partir de um método
+    list.push('g')  //push adciona um elemento ao FINAL da lista
+    console.log(list)
+
+    list.pop() //remove um elemento do FINAL da lista
+    console.log(list)
+
+    list.shift()//remove o PRIMEIRO elemento da lista
+    console.log(list)
+
+    list.unshift('aa') //adciona um elemendo no INICIO da lista
+    console.log(list)
+
