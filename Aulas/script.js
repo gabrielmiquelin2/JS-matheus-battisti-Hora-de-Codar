@@ -133,3 +133,7 @@
     list.unshift('aa') //adciona um elemendo no INICIO da lista
     console.log(list)
 
+
+
+    //OBJETOS
+
