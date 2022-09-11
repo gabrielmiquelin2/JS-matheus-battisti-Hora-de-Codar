@@ -135,5 +135,45 @@
 
 
 
-    //OBJETOS
+    //OBJETOS  //como se fosse uma lista de coisas 
+    const produto = {
+      name: 'camiseta',
+      preço: 15.99,
+      stock:false,
+      tamano:['P','M','G']
+    }
+    console.log(produto.name)
+    
+    
+    //destructuring //consigo extrari variaveis por meio de um objeto
+                    //funciona em objetos e arrays tbm            
+    const {preço,stock} = produto
+    console.log(preço)
+    console.log(stock)
 
+   const [n1, n2] = list
+
+   console.log(n1)
+   console.log(n2)
+
+
+
+   //JSON significa javascript objetc notation
+   //a sintaxe (modo como escreve) do json é pareceido com a do objeto
+  
+   const dog = {
+    name: 'Bidu',
+    age:10
+   }
+
+   const json = JSON.stringify(dog)
+   console.log(json)
+
+   const obj = JSON.parse(json) //"parse" converto o json em objeto javascript
+   console.log(obj)
+
+   const jsonErrado= '{"name":"Teste", "surname":"Testando"}'
+
+   const obj2 = JSON.parse(jsonErrado)
+
+   console.log(obj2)
