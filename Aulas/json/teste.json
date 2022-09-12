@@ -1,0 +1,14 @@
+   //CRIANDO UM JSON
+   //sempre com aspas duplas!!!
+   {
+    "nome":"Gabriel",
+    "idade": 30,
+    "esta_trabalhando": true,
+    "detalhes_profissao":{  //criando um object em json
+     "profissao":"progrmador",
+     "empresa":"empresa x"
+    },
+    "hobbies":["programar","correr","ler"]
+   } 
+   
+

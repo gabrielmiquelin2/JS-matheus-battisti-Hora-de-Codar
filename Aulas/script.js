@@ -160,20 +160,20 @@
 
    //JSON significa javascript objetc notation
    //a sintaxe (modo como escreve) do json é pareceido com a do objeto
-  
-   const dog = {
-    name: 'Bidu',
-    age:10
-   }
+   //sempre com aspas duplas!!!
+    const dog = {
+     name: 'Bidu',
+     age:10
+    }
 
-   const json = JSON.stringify(dog)
-   console.log(json)
+    const json = JSON.stringify(dog)
+    console.log(json)
 
    const obj = JSON.parse(json) //"parse" converto o json em objeto javascript
-   console.log(obj)
+    console.log(obj)
 
-   const jsonErrado= '{"name":"Teste", "surname":"Testando"}'
+    const jsonErrado= '{"name":"Teste", "surname":"Testando"}'
 
-   const obj2 = JSON.parse(jsonErrado)
+    const obj2 = JSON.parse(jsonErrado)
 
-   console.log(obj2)
+    console.log(obj2)
