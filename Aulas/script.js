@@ -177,3 +177,96 @@
     const obj2 = JSON.parse(jsonErrado)
 
     console.log(obj2)
+
+
+
+    //ESTRUTURAS CONDICIONAIS  //É uma condição ou questionamento
+                               //Em javascript  é representado pelo IF que na tradução da SE.   
+
+   const a = 10
+   if (a > 12){
+    console.log("A é maior que 8")
+   }else{  //se não
+    console.log("Não é maior que 8!")
+   }                             
+   // >,<,>=,<=
+   const b = "Gabriel"
+
+   if(b === "Lucas"){
+    console.log("O nome é joão")
+   }else if (b === "Pedro"){
+    console.log("O nome é Pedro")
+   }else{
+    console.log ("Não encotramos o nome do usuário")
+   }
+
+
+  //IF TERNÁRIO
+  //IF ternário é basicamente um if que pode ser feito em uma linha só
+    const someNumber = 14
+    let testingAnumber = someNumber < 20 ? 'Yes' : 'No' //utilzando if ternário
+    console.log(testingAnumber)
+
+
+  
+  //ESTRUTURAS DE REPETIÇÔES ou seja loop (vai e volta)
+  const mylist = [1,2,3,4,5]
+  let counter = 0
+
+  while(counter < mylist.length){ //loop while ou seja"ENQUANTO"
+    console.log('Imprimindo: ' + mylist[counter]) //concateni ou seja juntei utilizando o sinal de "+"
+    //counter = counter + 1
+    counter++ //forma resumida de descrever oq está acima
+  }
+
+  //LOOP FOR digamos que é uma forma mais resumida em relação ao "WHILE""
+  const mySecindList = ['a','b','c','d','e']
+  
+  for(let counter = 0; counter < mySecindList.length; counter++){
+   console.log(`imrprimindo: ${mySecindList[counter]}`)
+  }
+
+
+  //Métodos de ARRAY -> repetição
+  //esses métodos de array é uma forma de substituir os loops for,while etc ...
+
+  const names = ["Gabriel","Rafael","Pedro","Maria"]
+
+  names.forEach(function(name){
+    console.log(`O nome é: ${name}`)
+
+  })
+
+  //método MAP
+  const modifiedNames = names.map(function(name){
+    if(name === "Gabriel"){
+      return(name = "SR Gabriel")
+    }else{
+      return name
+    }
+  })
+  console.log(modifiedNames)
+
+  //método filter ou seja filtrar
+  const bigNumbers = [1,2,3,4,5,10,100].filter(function(number){
+    return number >= 5
+  })
+  console.log(bigNumbers)
+
+  //método reduce ou seja reduzir
+  const sumAll = [10,20,30,40,50].reduce(function(total,number){
+    return total + number
+  })
+  console.log(sumAll)
+
+
+
+  //FUNÇÕES
+  //Bloco de códigos que podem ser utilizados em várias partes do programa
+  //Se o código está repetindo muito,o certo é colocalo em alguma funçãp
+
+  function minhaFuncao(){
+     console.log("Olá função")
+  }
+  minhaFuncao()//executei a função para que aparece na tela
+  
