@@ -1,6 +1,7 @@
    //CRIANDO UM JSON
    //sempre com aspas duplas!!!
-   {
+   [
+    {
     "nome":"Gabriel",
     "idade": 30,
     "esta_trabalhando": true,
@@ -9,6 +10,7 @@
      "empresa":"empresa x"
     },
     "hobbies":["programar","correr","ler"]
-   } 
+   }
+  ]
    
 
