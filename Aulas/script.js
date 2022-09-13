@@ -263,10 +263,41 @@
 
   //FUNÇÕES
   //Bloco de códigos que podem ser utilizados em várias partes do programa
-  //Se o código está repetindo muito,o certo é colocalo em alguma funçãp
+  //Se o código está repetindo muito,o certo é colocalo em alguma função
 
   function minhaFuncao(){
      console.log("Olá função")
   }
   minhaFuncao()//executei a função para que aparece na tela
+  minhaFuncao()
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+  function nomeCompleto(nome, sobrenome){ //coloquei parametro na função ou seja      declarei variaveis dentro das aspas acima
+    return`O Nome completo é: ${nome} ${sobrenome}`
+  }
+  console.log (nomeCompleto("Gabriel","Miquelin"))
+  console.log (nomeCompleto("Lucas","Ferreira"))
+
+ ///////////////////////////////////////////////////////////////////////////////////////
+
+  const primeiroNome = "Maria"
+  const segundoNome = "Matos"
+  const meuNomeCompleto = nomeCompleto(primeiroNome, segundoNome)
+  console.log(meuNomeCompleto)
   
+  //////////////////////////////////////////////////////////////////////////////////////
+
+  //arrow functions // é uma fomra de sintaxe mais resumida
+  const myArrowFunction = (a,b) =>{
+    return a + b
+  }
+  console.log(myArrowFunction(2,5))
+
+//forma resumida de fazer a mesma coisa do que está feito ali encima
+  const mySimpleArrowFunction = (a,b) => a + b
+  console.log(mySimpleArrowFunction (5,5))
+
+ //////////////////////////////////////////////////////////////////////////////////////
+
+ //CLASSEs
