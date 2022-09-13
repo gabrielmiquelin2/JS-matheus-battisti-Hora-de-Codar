@@ -300,4 +300,104 @@
 
  //////////////////////////////////////////////////////////////////////////////////////
 
- //CLASSEs
+ //CLASSES //COMO SE FOSSE "FUNÇÕES ESPECIAIS"
+ class Product{
+
+  constructor(name,price){//Dentro das aspas ficam as propriedades
+    this.name = name    //ou seja 'name' e 'price' são propriedades
+    this.price = price
+  }
+
+  productDetail(){
+     return`O nome do produto é ${this.name} e o preço é R$${this.price}`
+  }
+
+ }
+  const socks= new Product('Meia Branca','11.99')
+  const shirt= new Product('Camisa Branca','31.99')
+
+  console.log(socks.name)
+  console.log(socks.price)
+
+  console.log(shirt.name)
+  console.log(shirt.price)
+
+  console.log(shirt.productDetail())
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+//HERANÇA //onde estende uma classe
+class SuperProduct extends Product{
+  constructor(name,price,size){
+    super(name,price)
+    this.size = size
+  }
+
+  showAdjective(adjective){
+   return `O ${this.name} é muito ${adjective}`
+  }
+
+  //métodos static
+  static sayHello(){
+    console.log("Hello")
+  }
+
+}
+
+const tenis = new SuperProduct ('Tenis vermelho', 69,99, '42')
+console.log(tenis.name)
+console.log(tenis.size)
+
+console.log(tenis.showAdjective('Lindo'))
+
+SuperProduct.sayHello()
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+//DOM - document obeject model
+//É uma ferrameta que adciona eventos e modifições ao 
+//html e css da nossa página através do javascript
+
+//seleção de elementos
+const title = document.getElementById('title')//#title
+console.log(title)
+
+//query selector //outra maneira de fazer a mesma coisa do decima
+const sameTitle = document.querySelector("#title")
+console.log(sameTitle)
+
+const text = document.querySelectorAll('.text')
+console.log(text)
+console.log(text[1]) //selecionando os paragráfos por meio do indice 
+
+
+//IMPRIMINDO O QUE ESTÁ ESCRITO NOS PARAGRAFOS (tags <p>)
+text.forEach((text)=>{
+  console.log(text.textContent.toUpperCase())
+})
+
+//Manipulação de elementos
+
+//alterei o meu h1 do html por meio do js 
+title.textContent = "Mudei o texto"
+
+//alterando o html
+text[0].innerHTML = '<span> Alteramos o HTML deste elemento </span>'
+
+//adcionando estilo(CSS) nos elementos por js
+text[2].style.backgroundColor = 'red'
+
+//adcionando classes
+text[2].classList.add('my-class')
+
+text[2].classList.remove('text')
+
+//removendo elemento 
+text[3].remove()//removi o ultimo paragráfo
+
+//EVENTOS
+const btn = document.querySelector("#btn")
+
+btn.addEventListener("click", function(){
+  text[2].style.color = "Blue"
+})
