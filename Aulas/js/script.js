@@ -5,7 +5,7 @@ const objs = [
  idade: 17,
  esta_trabalhando:true,
  detallhes_profissao:{
-  profissao:'programado'
+  profissao:'programado',
   empresa:'empresa x'  
  },
  hobbies:['programar','correr','ler'],
@@ -16,8 +16,8 @@ const objs = [
     idade: 37,
     esta_trabalhando:false,
     detallhes_profissao:{
-     profissao:null
-     empresa: null
+     profissao:null,
+     empresa: null,
     },
     hobbies:['jogar','academia'],
      }
